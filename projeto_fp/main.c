@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+//denis
+
 struct escola
 {
     int identificador;
@@ -31,6 +34,7 @@ struct transacao
     char data[10];
     char hora[8];
 };
+
 
 void main()
 {
