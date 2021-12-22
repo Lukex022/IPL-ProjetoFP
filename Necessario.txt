@@ -1,0 +1,25 @@
+Funções------------------------------
+
+Verificar se o aluno existe
+
+Menu para operação
+
+	Registar escola
+	Consultar escolas
+
+	Registar utilizador
+	Consulatr utilizador
+
+	registar trasação
+	Consultar transações
+
+	Verificar estatisticas
+
+
+Menu para a escolha da escola
+
+
+
+obs:.
+
+antes de preeencher os dados da transação verificar se o numero de utilizador/estudante existe
