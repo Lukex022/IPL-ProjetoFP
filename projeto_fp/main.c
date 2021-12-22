@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct escola
+typedef struct
 {
     int identificador;
     char nome[255];
     char abreviatura[10];
     char campus[10];
     char localidade[30];
-};
+}t_escola;
 
-struct utilizador
+typedef struct
 {
     int identificador;
     int identificador_escola;
@@ -20,9 +20,9 @@ struct utilizador
     char email[255];
     float saldo;
 
-};
+}t_utilizador;
 
-struct transacao
+typedef struct
 {
     int identificador;
     int identificador_utilizador;
@@ -30,9 +30,16 @@ struct transacao
     float valor;
     char data[10];
     char hora[8];
-};
+}t_transacao;
+
+
 
 void main()
 {
+    t_escola vetor_escolas[10];
+    t_utilizador vetor_utilizadores[120];
+    t_transacao vetor_transacoes[120];
+
+
 
 }

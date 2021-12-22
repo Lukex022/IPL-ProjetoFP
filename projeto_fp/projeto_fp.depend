@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1640194386 source:c:\users\marci\documents\github\projetofp\projeto_fp\main.c
+	<stdio.h>
+	<stdlib.h>
+
