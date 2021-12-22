@@ -1,21 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 int menu_opcoes(void);
 int confirmar_saida(void);
 
-
-struct escola
+typedef struct
 {
     int identificador;
     char nome[255];
     char abreviatura[10];
     char campus[10];
     char localidade[30];
-};
+}t_escola;
 
-struct utilizador
+typedef struct
 {
     int identificador;
     int identificador_escola;
@@ -25,9 +23,9 @@ struct utilizador
     char email[255];
     float saldo;
 
-};
+}t_utilizador;
 
-struct transacao
+typedef struct
 {
     int identificador;
     int identificador_utilizador;
@@ -35,11 +33,18 @@ struct transacao
     float valor;
     char data[10];
     char hora[8];
-};
+}t_transacao;
+
+
 
 
 void main()
 {
+    t_escola vetor_escolas[10];
+    t_utilizador vetor_utilizadores[120];
+    t_transacao vetor_transacoes[120];
+
+
 
 }
 
@@ -63,7 +68,7 @@ int menu_opcoes()
     do
     {
         system("cls");
-        printf("\n\nEscolha a sua Opcao:\n1 - Registar escola\n2 - Registar utilizador\n3 - Registar transação\n4 - Consultar escolas\n5 - Consultar utilizadores\n6 - Consultar transaçõesv\n7 - Verificar estatisticas\n0 - sair\n\tOPCAO ->");
+        printf("\n\nEscolha a sua Opcao:\n1 - Registar escola\n2 - Registar utilizador\n3 - Registar transaï¿½ï¿½o\n4 - Consultar escolas\n5 - Consultar utilizadores\n6 - Consultar transaï¿½ï¿½esv\n7 - Verificar estatisticas\n0 - sair\n\tOPCAO ->");
         scanf("%d", &opcao);
 
     }while(opcao != 1 && opcao != 2 && opcao != 3 && opcao != 4 && opcao != 5 && opcao != 6 && opcao != 7 && opcao != 0);
